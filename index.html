@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Modergot — документация</title>
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+	<header>
+		<div class="brand">Modergot</div>
+		<div class="badge">Владелец и разработчик: Boreal_builder</div>
+	</header>
+
+	<div class="container">
+		<nav class="sidebar">
+			<div class="nav-title">Разделы</div>
+			<a href="index.html">Главная</a>
+			<a href="docs/howto.html">Как пользоваться</a>
+			<a href="docs/add.html">Добавить бота</a>
+			<a href="docs/commands.html">Команды</a>
+			<a href="docs/verification.html">Верификация</a>
+			<a href="docs/scenarios.html">Сценарии</a>
+			<a href="docs/scenario_blocks.html">Блоки сценариев</a>
+			<a href="docs/roles_access.html">Роли и доступ</a>
+			<a href="docs/automod.html">Автомодерация</a>
+			<a href="docs/miniapp.html">Mini App</a>
+			<a href="docs/api.html">API</a>
+			<div class="hr"></div>
+			<div class="nav-title">Поддержка</div>
+			<a href="docs/troubleshooting.html">Troubleshooting</a>
+			<a href="docs/maintenance.html">Техработы</a>
+			<a href="docs/permissions.html">Права бота</a>
+			<a href="docs/safety.html">Безопасность</a>
+			<a href="docs/faq.html">FAQ</a>
+			<div class="hr"></div>
+			<div class="nav-title">Юридическое</div>
+			<a href="docs/privacy.html">Приватность</a>
+			<a href="docs/terms.html">Условия</a>
+			<a href="docs/changelog.html">Changelog</a>
+		</nav>
+
+		<main class="main">
+			<div class="card">
+				<h1>Документация Modergot</h1>
+				<p class="small">Документация для пользователей и администраторов. Везде используется обращение на «вы». Автомодерация подключается по запросу через владельца Boreal_builder.</p>
+
+				<div class="btns">
+					<a class="btn" href="docs/howto.html">Начать</a>
+					<a class="btn secondary" href="docs/add.html">Добавить бота</a>
+					<a class="btn secondary" href="docs/commands.html">Команды</a>
+				</div>
+
+				<div class="hr"></div>
+
+				<input id="searchInput" class="input" placeholder="Поиск по документации (например: верификация, сценарии, права)" autocomplete="off">
+				<div id="searchResults"></div>
+			</div>
+
+			<div class="grid">
+				<div class="card col-6">
+					<h2>Для администраторов</h2>
+					<ul>
+						<li>Добавьте бота в чат и выдайте права администратора.</li>
+						<li>Включите верификацию при необходимости.</li>
+						<li>Задайте правила поведения через сценарии.</li>
+						<li>Если требуется автомодерация — отправьте запрос владельцу.</li>
+					</ul>
+					<div class="btns">
+						<a class="btn secondary" href="docs/permissions.html">Права бота</a>
+						<a class="btn secondary" href="docs/scenarios.html">Сценарии</a>
+					</div>
+				</div>
+
+				<div class="card col-6">
+					<h2>Для участников</h2>
+					<p>В некоторых чатах включена верификация. Обычно это означает, что после входа потребуется подтвердить код, который приходит в личные сообщения.</p>
+					<div class="note warn">
+						<strong>Если бот не пишет вам в ЛС:</strong>
+						<div>Откройте диалог с ботом и нажмите <span class="kbd">/start</span>, затем повторите попытку.</div>
+					</div>
+					<div class="btns">
+						<a class="btn secondary" href="docs/verification.html">Как пройти верификацию</a>
+						<a class="btn secondary" href="docs/troubleshooting.html">Если что-то не работает</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<h2>Автомодерация</h2>
+				<p>Автомодерация подключается по запросу и работает при наличии лимита доступа.</p>
+				<div class="note ok">
+					<strong>Как подключить:</strong>
+					<div>В чате используйте <code>/automod</code>. Далее следуйте инструкции в ответе бота.</div>
+				</div>
+				<div class="note warn" style="margin-top:10px">
+					<strong>Важно:</strong>
+					<div>Если вам нужна автомодерация, пожалуйста, свяжитесь с владельцем Boreal_builder через Modergot в личных сообщениях.</div>
+				</div>
+			</div>
+
+			<div class="footer">
+				Modergot • Boreal_builder • GitHub Pages • Тёмная тема
+			</div>
+		</main>
+	</div>
+
+	<script src="assets/app.js"></script>
+</body>
+</html>
